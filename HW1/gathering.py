@@ -15,9 +15,9 @@ TABLE_FORMAT_FILE = 'data.csv'
 
 def gather_process():
     logger.info("gather")
-    logger.info("token for vk usually expires during 24 hours and needs to be recreated")
+    
     # gathere data and save as txt
-    access_token = '9eb8cc77fbfe004271459f050f6dba39f2a12474cd7022fca81584b9b34c7b3612aa2cd6b63f44c9fb8e5'
+    access_token = '729b0277fb967bdce86ea3b62ea8470188e1c3914ce2dc7e147fcf1ea872967edde474f6b4838fe200094'
     owner_id = '29534144'
     count=100
     offset=-1
