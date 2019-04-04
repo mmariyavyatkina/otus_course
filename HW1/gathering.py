@@ -46,15 +46,15 @@ def convert_data_to_table_format():
     reposts = []
     text = []
 
-    for i in range(l):
-        for j in range(n):
-            ids.append(result[i]['response']['items'][j]['id'])
-            dates.append(datetime.datetime.fromtimestamp(result[i]['response']['items'][j]['date']))
-            comments.append(result[i]['response']['items'][j]['comments']['count'])
-            likes.append(result[i]['response']['items'][j]['likes']['count'])
-            reposts.append(result[i]['response']['items'][j]['reposts']['count'])
-            text.append(result[i]['response']['items'][j]['text'].encode('utf-16','surrogatepass').decode('utf-16'))
-            
+    for result_num in result:
+        for item in result_num['response']['items']:
+            ids.append(item['id'])
+            dates.append(datetime.datetime.fromtimestamp(item['date']))
+            comments.append(item['comments']['count'])
+            likes.append(item['likes']['count'])
+            reposts.append(item['reposts']['count'])
+            text.append(item['text'].encode('utf-16','surrogatepass').decode('utf-16'))
+         
             
     df = pd.DataFrame({
         "id": ids, 
