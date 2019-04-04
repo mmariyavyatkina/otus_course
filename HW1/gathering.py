@@ -17,7 +17,7 @@ def gather_process():
     logger.info("gather")
     
     # gathere data and save as txt
-    access_token = '729b0277fb967bdce86ea3b62ea8470188e1c3914ce2dc7e147fcf1ea872967edde474f6b4838fe200094'
+    access_token = 'here should be your token'
     owner_id = '29534144'
     count=100
     offset=-1
