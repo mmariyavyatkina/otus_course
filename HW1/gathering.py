@@ -5,7 +5,6 @@ import json
 import datetime
 from ast import literal_eval
 import pandas as pd
-import matplotlib.pyplot as plt
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -15,7 +14,7 @@ TABLE_FORMAT_FILE = 'data.csv'
 
 def gather_process():
     logger.info("gather")
-    
+
     # gathere data and save as txt
     access_token = 'here should be your token'
     owner_id = '29534144'
