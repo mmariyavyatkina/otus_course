@@ -1,2 +1,2 @@
-# otus_course
-home works
+# Otus course
+Home works
