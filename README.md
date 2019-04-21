@@ -1,2 +1,2 @@
 # Otus course
-Home works
+Homeworks
